@@ -9,8 +9,27 @@
 </head>
 
 <body>
-    <div class="todo-container">
-        <h1>My Todo App</h1>
+    <div class="app-container">
+    
+    <aside class="sidebar">
+        <h2>Todo App</h2>
+        <ul>
+            <li><i class="fa-solid fa-list"></i> All Tasks</li>
+            <li><i class="fa-solid fa-check"></i> Completed</li>
+            <li><i class="fa-solid fa-clock"></i> Pending</li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        
+        <header class="top-header">
+            <h1>Dashboard</h1>
+        </header>
+
+        <section class="todo-section">
+            <!-- Yahan tumhara existing todo UI ayega -->
+                 <div class="todo-container">
+        <h2>My Todo App</h2>
         <div class="input-section">
             <input type="text" placeholder="Enter your task...">
             <button>
@@ -21,19 +40,24 @@
             <li>
                 <input type="checkbox">
                 <span>Learn HTML</span>
-<button class="delete-btn">
-    <i class="fa-regular fa-trash-can"></i>
-</button>
+                <button class="delete-btn">
+                    <i class="fa-regular fa-trash-can"></i>
+                </button>
             </li>
             <li>
                 <input type="checkbox">
                 <span>Learn CSS</span>
-<button class="delete-btn">
-<i class="fa-regular fa-trash-can"></i>
-</button>
+                <button class="delete-btn">
+                    <i class="fa-regular fa-trash-can"></i>
+                </button>
             </li>
         </ul>
     </div>
+        </section>
+
+    </main>
+
+</div>
 </body>
 
 </html>

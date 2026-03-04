@@ -3,10 +3,58 @@ body {
     padding: 0;
     font-family: 'Segoe UI', sans-serif;
     background: linear-gradient(135deg, #e6e8f3, #764ba2);
+
+}
+.app-container {
+    display: flex;
+    height: 100vh;
+}
+.sidebar {
+    width: 250px;
+    background-color: #1e1e2f;
+    color: white;
+    padding: 20px;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.sidebar ul li:hover {
+    background-color: #33334d;
+}
+.main-content {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+.top-header {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.todo-section {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+}
+@media (max-width: 768px) {
+
+    .app-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
 }
 .todo-container {
     width: 90%;
